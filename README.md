@@ -1,2 +1,2 @@
 # webLar
-Landing page e area de administradores para a plataforma La Receita.
+Web area for dissemination and administration of the entire La Receita platform.
