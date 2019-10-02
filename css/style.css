@@ -1,0 +1,283 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-right: 10px;
+    height: 100px;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), transparent);
+}
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#menu_scrow ul li {
+    display: inline; 
+    
+}
+#menu_scrow ul li a {
+    border: medium none;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#menu_scrow ul li a:hover {
+    color: #F4313F;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+    margin: 30px 20px 0 10px;
+}
+.logo p {
+    color:#F4313F;
+    font-weight: bold;
+    font-size: 25pt;
+    font-family: 'Dancing Script', cursive;
+}
+.inform_main {
+    background-image: url("../img/wallpaper3.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 615px;
+}
+.download_info {
+    text-align: center;
+}
+.download_info h3 {
+    font-size: 45pt;
+    color: #FFFFFF;
+}
+
+.download_area img {
+    width: 220px;
+    height: 80px;
+    margin: 25px;
+}
+.btn {
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-outline-danger {
+    color: #F4313F;
+    background-color: transparent;
+    background-image: none;
+    border-color: #F4313F;
+    width: 100px;
+  }
+  
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #F4313F;
+    border-color: #F4313F;
+}
+.login {
+    margin-right: 15px;
+}
+.feliz {
+    color: #F4313F;
+}
+.button_down {
+    position: absolute;
+    margin-top: 35em;
+    
+}
+.button_down img {
+    width: 40px;
+    height: 40px;
+}
+.button_down img:hover {
+    width: 43px;
+    height: 43px;
+    transition: 0.2s;
+}
+.sistema_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 575px; 
+    margin: 40px;
+}
+.area_text_sistema {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.area_text_sistema h3 {
+    font-weight: bold;
+    font-size: 40pt;
+    font-family: 'Dancing Script', cursive;
+}
+.area_text_sistema p {
+    font-size: 13pt;
+    font-family: 'Roboto', sans-serif;
+}
+.area_image_sistema img {
+    height: 450px;
+    width: 500px;
+}
+.centralizar {
+    left: 50%;
+}
+.funcionalidades_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/background_funcio.png");
+    background-size: cover;
+    height: 575px; 
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+.funcionalidades_area h3 {
+    font-weight: bold;
+    font-size: 40pt;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color:#FFB500;
+    padding: 10px 50px 10px 50px;
+    background-color: #F4313F;
+    border-radius: 25px;
+    box-shadow: #000000;
+}
+.items_func {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.items_func img {
+    width: 80px;
+    height: 80px;
+}
+.item_area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 350px;
+    margin: 10px;
+}
+.item_area h4 {
+    
+    color: #FFB500;
+    margin-bottom: 10px;
+}
+.item_area p {
+    margin-top: 0px;
+    color: #ffffff;
+}
+.contato_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 575px; 
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #3D3935;
+}
+.redes_sociais {
+    text-align: center;
+}
+.redes_sociais h3{
+    color: #ffffff;
+    font-size: 16pt;
+}
+
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-contact {
+  width: 100%;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-input {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+}
+
+.form-contact-textarea {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Arial", Times, serif;
+}
+
+.form-contact-button {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 4px;
+  color: #fff;
+  height: 40px;
+  opacity: .8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #B22222;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #500707;
+  border-right: 1px solid #500707;
+  transition: 1s;
+}
+
+.form-contact-button:hover {
+  opacity: 1;
+}
