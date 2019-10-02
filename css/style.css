@@ -31,7 +31,7 @@ body {
 }
 
 #menu_scrow ul li a:hover {
-    color: #F4313F;
+    color: #FFB500;
 }
 .logo {
     display: flex;
@@ -200,8 +200,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 575px; 
+    height: 545px; 
     padding: 40px;
     font-family: 'Roboto', sans-serif;
     background-color: #3D3935;
@@ -209,14 +208,14 @@ body {
 .redes_sociais {
     text-align: center;
 }
-.redes_sociais h3{
+.contato_area h3{
     color: #ffffff;
     font-size: 16pt;
 }
 
 
 .container {
-  width: 50%;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -280,4 +279,17 @@ body {
 
 .form-contact-button:hover {
   opacity: 1;
+}
+
+.rodape {
+    position: absolute;
+    margin: 0px;
+    background-color: #FFFFFF;
+    height: 30px;
+    width: 100%;
+}
+.rodape p {
+    margin: 4px 0 0 0;
+    text-align: center;
+    font-size: 10pt;
 }
