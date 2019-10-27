@@ -6,12 +6,11 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
-        <script src="js/menu_topo.js"></script>
     </header>
     <body>
         <div class="menu">
             <div class="logo">
-                <img src="img/iconLar.png"/>
+                <img src="img/icone.png"/>
                 <p>La Receita</p>
                 <div class="nav_menu">
                     <div id="menu_scrow">
@@ -29,15 +28,13 @@
         </div>
         <div class="inform_main">
            <div class="download_info">
-                <h3>A gente ama ver você <span class="feliz" id="log"></span></h3>
-                <script type="text/javascript" src="js/text.js"></script>
+                <div class="text_animation">
+                    <h3>A gente ama ver você <span class="feliz" id="log"></span></h3>
+                </div>
                 <div class="download_area">
                     <img src="img/google_play.png"/>
                     <img src="img/apple_store.png"/>
                 </div>
-            </div>
-            <div class="button_down">
-                <img src="img/down_icon.png" />
             </div>
         </div>
         <div class="sistema_area">
@@ -50,9 +47,6 @@
             </div>
             <div class="area_image_sistema">
                 <img src="img/tablet.png" />
-            </div>
-            <div class="button_down centralizar">
-                <img src="img/down_black.png" />
             </div>
         </div>
         <div class="funcionalidades_area">
@@ -103,41 +97,26 @@
                     </p>
                 </div>
             </div>
-            <div class="button_down">
-                <img src="img/down_icon.png" />
-            </div>
         </div>
         <footer>
             <div class="contato_area">
-                <div class="redes_sociais">
-                    <h3>#CURTA</h3>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flarcooperativaagroindustrial%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
-                    width="350" height="450" style="border:none;overflow:hidden" 
-                    scrolling="no" frameborder="0" allowTransparency="true" 
-                    allow="encrypted-media">
-                    </iframe>
+                <h3>NOSSO CONTATO</h3>
+                <div class="container">
+                    <form action="#" class="form-contact" tabindex="1" name="formContato" id="formulario"> 
+                        <input type="text" class="form-contact-input" id="nome" placeholder="Nome" required />
+                        <input type="email" class="form-contact-input" id="email" placeholder="Email"  />
+                        <input type="tel" class="form-contact-input" id="tel" placeholder="Telefone" />
+                        <textarea class="form-contact-textarea" id="conteudo" placeholder="Deixe uma mensagem"></textarea>
+                        <button type="submit" class="form-contact-button">Enviar</button>
+                    </form>
                 </div>
-                <div class="redes_sociais">
-                    <h3>#SIGA</h3>
-                    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-                    <div class="elfsight-app-13b91e3f-eae3-4469-ad92-28bd0410513d"></div>
-                </div>
-                <div class="campo contatos">
-                    <h3>#CONTATO</h3>
-                    <div class="container">
-                        <form action="#" class="form-contact" method="post" tabindex="1">
-                            <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required />
-                            <input type="email" class="form-contact-input" name="email" placeholder="Email" required />
-                            <input type="tel" class="form-contact-input" name="tel" placeholder="Telefone" />
-                            <textarea class="form-contact-textarea" name="conteudo" placeholder="Deixe uma mensagem" required></textarea>
-                            <button type="submit" class="form-contact-button">Enviar</button>
-                        </form>
-                    </div>
-                </div>
+                <div id="infoForm"></div>
             </div>
             <div class="rodape">
                 <p>© Copyright 2018 Lar Cooperativa Agroindustrial</p>
             </div>
         </footer>
+        <script type="text/javascript" src="js/text.js"></script>
+        <script type="text/javascript" src="js/validation.js"></script>
     </body>
 </html>

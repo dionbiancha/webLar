@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Rudiment";
+    src: url("Rudiment.ttf") format("truetype");
+}
+
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,7 +16,8 @@ body {
     margin-right: 10px;
     height: 100px;
     width: 100%;
-    background-image: linear-gradient(rgb(0, 0, 0), transparent);
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(61,57,53,1) 100%);
 }
 .nav_menu {
     display: flex;
@@ -24,7 +30,7 @@ body {
 }
 #menu_scrow ul li a {
     border: medium none;
-    color: #FFFFFF;
+    color: #3D3935;
     font-weight: bold;
     text-decoration: none;
     margin-right: 10px;
@@ -39,9 +45,9 @@ body {
     align-items: center;
 }
 .logo img {
-    width: 150px;
-    height: 150px;
-    margin: 30px 20px 0 10px;
+    width: 100px;
+    height: 100px;
+    margin: 5px 20px 0 10px;
 }
 .logo p {
     color:#F4313F;
@@ -50,24 +56,34 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 .inform_main {
-    background-image: url("../img/wallpaper3.jpg");
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 615px;
-}
+} 
 .download_info {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+   
+}
+.text_animation {
+   width: 100%;
 }
 .download_info h3 {
     font-size: 45pt;
-    color: #FFFFFF;
+    color: #3D3935;
 }
-
+.download_area {
+    margin-top: 80px;
+}
 .download_area img {
-    width: 220px;
-    height: 80px;
+    width: 200px;
+    height: 70px;
     margin: 25px;
 }
 .btn {
@@ -104,8 +120,16 @@ body {
 }
 .button_down {
     position: absolute;
-    margin-top: 35em;
-    
+    margin-top: 35em;  
+}
+.button_down button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 .button_down img {
     width: 40px;
@@ -123,7 +147,7 @@ body {
     align-items: center;
     background-color: #FFFFFF;
     height: 575px; 
-    margin: 40px;
+    padding: 40px;
 }
 .area_text_sistema {
     display: flex;
@@ -151,23 +175,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("../img/background_funcio.png");
+    background-image: url("../img/background_funcio.jpg");
     background-size: cover;
+    background-attachment: fixed;
     height: 575px; 
     padding: 40px;
     font-family: 'Roboto', sans-serif;
 }
 .funcionalidades_area h3 {
     font-weight: bold;
-    font-size: 40pt;
-    font-family: 'Dancing Script', cursive;
+    font-size: 55pt;
+    font-family: 'Rudiment';
     margin-bottom: 20px;
     margin-top: 10px;
     color:#FFB500;
-    padding: 10px 50px 10px 50px;
-    background-color: #F4313F;
-    border-radius: 25px;
-    box-shadow: #000000;
 }
 .items_func {
     display: flex;
@@ -184,11 +205,12 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 350px;
-    margin: 10px;
+    width: 300px;
+    margin: 20px;
 }
 .item_area h4 {
-    
+    font-family: 'Rudiment';
+    font-size: 20pt;
     color: #FFB500;
     margin-bottom: 10px;
 }
@@ -198,24 +220,25 @@ body {
 }
 .contato_area {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     height: 545px; 
     padding: 40px;
     font-family: 'Roboto', sans-serif;
-    background-color: #3D3935;
 }
 .redes_sociais {
     text-align: center;
 }
 .contato_area h3{
-    color: #ffffff;
+    
+    color: #3D3935;
     font-size: 16pt;
 }
 
 
 .container {
-  width: 500px;
+  width: 700px;
   margin: 0 auto;
 }
 
@@ -226,10 +249,10 @@ body {
 
 .form-contact-input {
   width: 100%;
-  color: #292929;
+  color: #E9E9E9;
   font-size: 18px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
+  background-color: #3D3935;
+  border: 1px solid #3D3935;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -242,10 +265,10 @@ body {
 
 .form-contact-textarea {
   width: 100%;
-  color: #292929;
+  color: #E9E9E9;
   font-size: 18px;
-  background-color: #E9E9E9;
-  border: 1px solid #E9E9E9;
+  background-color: #3D3935;
+  border: 1px solid #3D3935;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
