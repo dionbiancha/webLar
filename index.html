@@ -6,6 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </header>
     <body>
         <div class="menu">
@@ -15,9 +16,9 @@
                 <div class="nav_menu">
                     <div id="menu_scrow">
                         <ul>
-                            <li><a href="#">Aplicativo</a></li>
-                            <li><a href="#">Funcionalidades</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li><a data-scroll href="#aplicativo">Aplicativo</a></li>
+                            <li><a data-scroll href="#funcionalidades">Funcionalidades</a></li>
+                            <li><a data-scroll href="#contato">Contato</a></li>
                         </ul>
                     </div>
                 </div>
@@ -29,7 +30,12 @@
         <div class="inform_main">
            <div class="download_info">
                 <div class="text_animation">
-                    <h3>A gente ama ver você <span class="feliz" id="log"></span></h3>
+                    <div>
+                        <h3>A gente ama ver você</h3>
+                    </div>
+                    <div class="text_transation">
+                        <h3><span class="feliz" id="log"></span></h3>
+                    </div>
                 </div>
                 <div class="download_area">
                     <img src="img/google_play.png"/>
@@ -37,7 +43,7 @@
                 </div>
             </div>
         </div>
-        <div class="sistema_area">
+        <div class="sistema_area" id="aplicativo">
             <div class="area_text_sistema">
                 <h3>Aplicativo de <span class="feliz">Receitas</span></h3>
                 <p>&nbsp;&nbsp;O aplicativo <span class="feliz">La Receita</span> busca 
@@ -45,11 +51,12 @@
                     de produtos Lar de maneira rápida e simplificada.
                 </p>
             </div>
-            <div class="area_image_sistema">
+            <div class="area_image_sistema" data-aos="fade-left">
                 <img src="img/tablet.png" />
             </div>
         </div>
-        <div class="funcionalidades_area">
+        <div class="funcionalidades_area" id="funcionalidades" 
+        style="background: url('./img/background_funcio.jpg') center / cover; background-attachment: fixed;">
             <h3>Funcionalidades</h3>
             <div class="items_func">
                 <div class="item_area">
@@ -99,7 +106,7 @@
             </div>
         </div>
         <footer>
-            <div class="contato_area">
+            <div class="contato_area" id="contato">
                 <h3>NOSSO CONTATO</h3>
                 <div class="container">
                     <form action="#" class="form-contact" tabindex="1" name="formContato" id="formulario"> 
@@ -116,7 +123,22 @@
                 <p>© Copyright 2018 Lar Cooperativa Agroindustrial</p>
             </div>
         </footer>
+
+        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=765cb156-67d5-455a-a1f0-e84aaa65926c"> </script>
         <script type="text/javascript" src="js/text.js"></script>
         <script type="text/javascript" src="js/validation.js"></script>
+        <script src="js/smooth-scroll.polyfills.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 500,
+                speedAsDuration: true
+            });
+        </script>
+        <script>
+            AOS.init({
+                duration: 1000
+            });
+        </script>
     </body>
 </html>
