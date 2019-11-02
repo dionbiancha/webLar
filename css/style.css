@@ -68,8 +68,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 80px;
-    
-   
+    margin-left: 680px; 
 }
 .text_animation {
    width: 100%;
@@ -83,6 +82,11 @@ body {
 .text_transation h3 {
     margin: 0px;
     text-align: center;
+}
+.text_transation span {
+    font-size: 60pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .download_info h3 {
     font-size: 45pt;
@@ -185,10 +189,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(37, 37, 37, 0.582);
     height: 575px; 
     padding: 40px;
     font-family: 'Roboto', sans-serif;
+    background: url('../img/background_funcio.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 .funcionalidades_area h3 {
     font-weight: bold;
@@ -226,102 +232,34 @@ body {
     margin-top: 0px;
     color: #ffffff;
 }
-.contato_area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: 545px; 
-    padding: 40px;
-    font-family: 'Roboto', sans-serif;
-}
-.redes_sociais {
+.map_area {
+    height: 615px;
     text-align: center;
 }
-.contato_area h3{
-    
+.map_area h3{  
     color: #3D3935;
     font-size: 16pt;
-}
-
-
-.container {
-  width: 700px;
-  margin: 0 auto;
-}
-
-.form-contact {
-  width: 100%;
-  font-family: "Arial", Times, serif;
-}
-
-.form-contact-input {
-  width: 100%;
-  color: #E9E9E9;
-  font-size: 18px;
-  background-color: #3D3935;
-  border: 1px solid #3D3935;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  height: 40px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
-}
-
-.form-contact-textarea {
-  width: 100%;
-  color: #E9E9E9;
-  font-size: 18px;
-  background-color: #3D3935;
-  border: 1px solid #3D3935;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  height: 200px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
-  padding-top: 16px;
-  padding-left: 0;
-  padding-right: 0;
-  font-family: "Arial", Times, serif;
-}
-
-.form-contact-button {
-  width: 100%;
-  font-size: 18px;
-  border-radius: 4px;
-  color: #fff;
-  height: 40px;
-  opacity: .8;
-  margin-bottom: 20px;
-  cursor: pointer;
-  background: #B22222;
-  display: block;
-  border: none;
-  border-bottom: 1px solid #500707;
-  border-right: 1px solid #500707;
-  transition: 1s;
-}
-
-.form-contact-button:hover {
-  opacity: 1;
+    margin: 0px;
+    background-color: #FFB500;
+    padding: 20px;
+    position: absolute;
+    margin-left: 38%;
 }
 
 .rodape {
-    position: absolute;
     margin: 0px;
     background-color: #3D3935;
     height: 30px;
     width: 100%;
 }
 .rodape p {
-    margin: 4px 0 0 0;
+    margin: 0px;
     text-align: center;
     font-size: 10pt;
     color: #FFFFFF;
+    line-height: 30px;
+}
+.map_area img {
+    width: 100%;
+    height: 615px;
 }
