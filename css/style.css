@@ -68,7 +68,6 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 80px;
-    margin-left: 680px; 
 }
 .text_animation {
    width: 100%;
@@ -84,16 +83,16 @@ body {
     text-align: center;
 }
 .text_transation span {
-    font-size: 60pt;
+    font-size: 80pt;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .download_info h3 {
-    font-size: 45pt;
+    font-size: 50pt;
     color: #3D3935;
 }
 .download_area {
-    margin-top: 80px;
+    margin-top: 120px;
 }
 .download_area img {
     width: 200px;
