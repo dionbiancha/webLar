@@ -1,0 +1,101 @@
+.wrapper {
+    .top_navbar{
+        width: 100%;
+        height: 65px;
+        display: flex;
+        position: relative;
+        .top_menu{
+            width: calc(100% - 10px);
+            height: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            .logo{
+                color: rgb(239, 51, 64);
+                font-size: 22px;
+                font-weight: bold;
+                letter-spacing: 3px;
+                display: flex;
+                align-items: center;
+                img{
+                    max-width: 10%;
+                    max-height: 10%;
+                }
+            }
+            .dropdown{
+                display:inline-block;
+                position:relative;
+                margin-right: 10%;
+                i {
+                    animation-name: an;
+                    animation-duration: 2s;
+                }
+                button{
+                    font-size: 26px;
+                    width: 44px;
+                    height: 44px;
+                    line-height: 44px;
+                    border: 1px solid rgb(211, 0, 0);;
+                    border-radius: 50%;
+                    background-color:rgb(255, 255, 255);
+                    color:rgb(211, 0, 0);
+                    transition:.3s;
+                    cursor:pointer;
+                }
+                
+                .hidden{
+                    border-width: 2px;
+                    border-style: solid;
+                    border-color: rgb(211, 0, 0);;
+                    margin-top: 03px;
+                    padding: 04px;
+                    background-color:#fff;
+                    box-shadow:0 5px 9px rgba(0,0,0,0.2);
+                    z-index:1;
+                    visibility:hidden;
+                    position:absolute;
+                    min-width:100%;
+                    font-weight: bold;
+                    opacity:0;
+                    transition:.3s;
+                    a{
+                        display: block;
+                        margin-top: 08px;
+                        text-decoration:none;
+                        justify-content: center;
+                        padding:8px;
+                        color:#000;
+                        transition:.1s;
+                        white-space:nowrap;
+                        
+                    }
+                    a:hover{
+                        background-color:rgb(255, 255, 255);
+                        color:rgb(211, 0, 0);
+                    }
+                }
+            }
+            .dropdown:hover{ 
+                color: white;
+                transform: scale(1.2);
+                
+                .hidden{
+                    visibility:visible;
+                    opacity:1;
+                }
+                
+                @keyframes an {
+                    from {
+                        transform: rotateZ(0deg)
+                    }
+                    to {
+                        transform: rotateZ(180deg)
+                    }
+                }
+            }
+        }
+    }
+}

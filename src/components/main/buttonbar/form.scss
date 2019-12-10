@@ -1,0 +1,64 @@
+$margin-wrapper: 240;
+.button{
+    width: calc(100% - #{$margin-wrapper * 1.13}px);
+    margin-top: 15px;
+    margin-left: #{$margin-wrapper}px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    background-color: white;
+    .submit{
+        border: 2px solid rgb(211, 0, 0);
+        margin-left: 15px;
+        padding: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        color: rgb(211, 0, 0);;
+        background-color: rgb(255, 255, 255);
+    }
+    .search{
+        margin-left: 60px;
+        padding: 5px;
+        border: 2px solid rgb(211, 0, 0);
+        background: #f1f1f1;
+        background-color: white;
+    }
+    
+    button{
+        padding: 6px 11px;
+        background: rgb(211, 0, 0);
+        color: white;
+        border: 1px solid rgb(211, 0, 0);
+        cursor: pointer
+    }
+}  
+.register-prdoduct{
+	width: 600px;
+	display: flex;
+	/* box-sizing: border-box; */
+	/* border-radius: 8px; */
+	/* text-align: center;
+	justify-content: space-between; */
+    flex-direction: column;
+    h1{
+        margin-bottom: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        flex: 1;
+    }
+}
+.txtb{
+	display: flex;
+	margin: 8px 0;
+	border-radius: 7px;
+    justify-content: space-between;
+    label{
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        /* transform: uppercase; */
+        font-size: 18px;
+        align-self: center;
+    }
+    input:focus, textarea:focus, select:focus{
+        border: 2px solid rgb(134, 134, 134);
+    }
+}

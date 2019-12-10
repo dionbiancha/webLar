@@ -1,0 +1,67 @@
+.sidebar{
+    position: absolute;
+    background: #312f2f;
+    width: 242px;
+    height: 100%;
+    transition: all 0.3s ease;
+    overflow-y: auto;
+    ul li {
+            a{
+                display: block;
+                padding: 20px;
+                color: #fff;
+                position: relative;
+                margin-bottom: 1px;
+                color: #ffffff;
+                font-size: 17px;
+                white-space: nowrap;
+               
+                span.icon{
+                    margin-right: 10px;
+                    display: inline-block;
+                }
+                span.title{
+                    display: inline-block;
+                }
+            }
+            a:before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 100%;
+                background: rgb(211, 0, 0);
+                display: none;
+            }
+            a:hover,
+            a.active{
+                color: #fff;
+                animation-name: hover;
+                animation-duration: 1s;
+            }
+            @keyframes hover {
+                from {
+                    background: #312f2f;
+                }
+                50% {
+                    background: #964646;
+                }
+                to {
+                    background: #312f2f;
+                }
+            }
+        }
+    .namelist{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 10px;
+        margin-top: 20px;
+    }
+    .linelist{
+        border-top: 2px rgb(141, 141, 141) solid; 
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}  
