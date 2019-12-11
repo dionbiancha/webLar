@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Popup from './popup.js';
-import NewSongForm from './NewSongForm.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './form.scss';
+import Form from './form.js';
 
 
 class OpenForm extends Component{
@@ -20,8 +20,8 @@ class OpenForm extends Component{
                 <button type="submit" className="buttonsearch"><FontAwesomeIcon icon={faSearch} className="icon" /></button>
             </div>
             <Popup isOpen={this.state.isOpen} onClose={(e) => this.setState({isOpen: false})}>
-            </Popup>
-                
+            <Form/>
+            </Popup>    
             </div>
         );
     }

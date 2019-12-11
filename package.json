@@ -13,6 +13,7 @@
     "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-html-id": "^0.1.5",
     "react-native-svg": "^9.13.3",
     "react-native-vector-icons": "^6.6.0",
     "react-router-dom": "^5.1.2",
