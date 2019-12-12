@@ -3,8 +3,8 @@ import Logo from '../header/logo';
 import Side from '../side/sidebar';
 import '../../sass/global.scss';
 import OpenForm from "../main/buttonbar/popupform";
-import List from '../main/buttonbar/list';
-import Listmain from "../main/buttonbar/listmain";
+import List from "../main/buttonbar/listmain.js";
+
 
 class Home extends Component {
   componentDidMount(){
@@ -16,7 +16,7 @@ class Home extends Component {
         <Logo />
         <Side />
         <OpenForm text="+ Registrar Produto"/>
-        <Listmain/>
+        <List/>
       </div>
     );
   }

@@ -3,7 +3,6 @@ import Popup from './popup.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './form.scss';
-import Form from './form.js';
 
 
 class OpenForm extends Component{
@@ -20,7 +19,12 @@ class OpenForm extends Component{
                 <button type="submit" className="buttonsearch"><FontAwesomeIcon icon={faSearch} className="icon" /></button>
             </div>
             <Popup isOpen={this.state.isOpen} onClose={(e) => this.setState({isOpen: false})}>
-            <Form/>
+            <h4>Registrar Produto</h4>
+                <input
+                    type="text"
+                    value=""
+                    />
+                <button>test</button>
             </Popup>    
             </div>
         );
