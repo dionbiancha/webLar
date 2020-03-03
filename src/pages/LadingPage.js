@@ -1,14 +1,11 @@
 import React from 'react';
 import '../App.css';
+import LadingTopMenu from '../components/LadingTopMenu';
 
 function LadingPage() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Area da Lading Page
-        </p>
-      </header>
+      <LadingTopMenu />
     </div>
   );
 }

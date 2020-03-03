@@ -1,0 +1,20 @@
+.nav_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#menu_scrow ul li {
+    display: inline; 
+    
+}
+#menu_scrow ul li a {
+    border: medium none;
+    color: #3D3935;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+#menu_scrow ul li a:hover {
+    color: #FFB500;
+}
